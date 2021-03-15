@@ -20,14 +20,12 @@ namespace GismeteoGrabber.Utilities
                     Debug.WriteLine($"{nameof(HtmlWebRequestHandler)} start load data url:{url}");
                     document = _htmlWeb.Load(url);
                     Debug.WriteLine($"{nameof(HtmlWebRequestHandler)} end load data url:{url}");
-
                 }
             }
             catch
             {
                 Debug.WriteLine($"{nameof(HtmlWebRequestHandler)} catch exception");
             }
-
 
             if (document is null)
                 return JobResult<HtmlDocument>.CreateFailed();

@@ -2463,11 +2463,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ekaterina\\source\\repos\\TestUtility\\GismeteoGrabber\\GismeteoGrabber.csproj",
+      "projectUniqueName": "C:\\Folder\\db\\TestUtility\\GismeteoGrabber\\GismeteoGrabber.csproj",
       "projectName": "GismeteoGrabber",
-      "projectPath": "C:\\Users\\Ekaterina\\source\\repos\\TestUtility\\GismeteoGrabber\\GismeteoGrabber.csproj",
+      "projectPath": "C:\\Folder\\db\\TestUtility\\GismeteoGrabber\\GismeteoGrabber.csproj",
       "packagesPath": "C:\\Users\\Ekaterina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ekaterina\\source\\repos\\TestUtility\\GismeteoGrabber\\obj\\",
+      "outputPath": "C:\\Folder\\db\\TestUtility\\GismeteoGrabber\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -22,7 +22,6 @@ namespace GismeteoGrabber.Scheduler
                 var job = scope.ServiceProvider.GetService(bundle.JobDetail.JobType) as IJob;
                 return job;
             }
-
         }
 
         public void ReturnJob(IJob job)

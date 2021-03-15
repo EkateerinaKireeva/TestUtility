@@ -30,6 +30,7 @@ namespace GismeteoGrabber.Utilities
             return false;
         }
 
+
         public static string ClearTemperature(this string temperature)
         {
             if (string.IsNullOrEmpty(temperature))
