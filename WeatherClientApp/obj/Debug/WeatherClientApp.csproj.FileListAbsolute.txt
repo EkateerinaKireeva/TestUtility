@@ -1,0 +1,12 @@
+C:\Users\Ekaterina\source\repos\TestUtility\WeatherClientApp\bin\Debug\WeatherClientApp.exe
+C:\Users\Ekaterina\source\repos\TestUtility\WeatherClientApp\bin\Debug\WeatherClientApp.pdb
+C:\Users\Ekaterina\source\repos\TestUtility\WeatherClientApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ekaterina\source\repos\TestUtility\WeatherClientApp\bin\Debug\WeatherClientApp.exe.config
+C:\Users\Ekaterina\source\repos\TestUtility\WeatherClientApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ekaterina\source\repos\TestUtility\WeatherClientApp\obj\Debug\WeatherClientApp.Form1.resources
+C:\Users\Ekaterina\source\repos\TestUtility\WeatherClientApp\obj\Debug\WeatherClientApp.Properties.Resources.resources
+C:\Users\Ekaterina\source\repos\TestUtility\WeatherClientApp\obj\Debug\WeatherClientApp.WeatherCityForm.resources
+C:\Users\Ekaterina\source\repos\TestUtility\WeatherClientApp\obj\Debug\WeatherClientApp.csproj.GenerateResource.cache
+C:\Users\Ekaterina\source\repos\TestUtility\WeatherClientApp\obj\Debug\WeatherClientApp.csproj.CopyComplete
+C:\Users\Ekaterina\source\repos\TestUtility\WeatherClientApp\obj\Debug\WeatherClientApp.exe
+C:\Users\Ekaterina\source\repos\TestUtility\WeatherClientApp\obj\Debug\WeatherClientApp.pdb

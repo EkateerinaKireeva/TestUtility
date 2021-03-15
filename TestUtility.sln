@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GismeteoGrabber", "GismeteoGrabber\GismeteoGrabber.csproj", "{8C52794D-DC1B-4116-BEF5-BA019902258C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainApi", "MainApi\MainApi.csproj", "{6D91C74B-632F-40D7-BA6E-697991009790}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CommonProject", "CommonProject\CommonProject.shproj", "{89E75131-F4FF-4D2E-B211-7C931ECC4D2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherClientApp", "WeatherClientApp\WeatherClientApp.csproj", "{A4C1DFE5-9DE8-4B60-89F8-E736A2186CC9}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		CommonProject\CommonProject.projitems*{89e75131-f4ff-4d2e-b211-7c931ecc4d2c}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C52794D-DC1B-4116-BEF5-BA019902258C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C52794D-DC1B-4116-BEF5-BA019902258C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C52794D-DC1B-4116-BEF5-BA019902258C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C52794D-DC1B-4116-BEF5-BA019902258C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D91C74B-632F-40D7-BA6E-697991009790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D91C74B-632F-40D7-BA6E-697991009790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D91C74B-632F-40D7-BA6E-697991009790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D91C74B-632F-40D7-BA6E-697991009790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4C1DFE5-9DE8-4B60-89F8-E736A2186CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C1DFE5-9DE8-4B60-89F8-E736A2186CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4C1DFE5-9DE8-4B60-89F8-E736A2186CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4C1DFE5-9DE8-4B60-89F8-E736A2186CC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EACD69D-43B3-4488-8CEA-F7A70E23EC53}
+	EndGlobalSection
+EndGlobal
