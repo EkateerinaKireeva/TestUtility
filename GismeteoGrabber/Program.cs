@@ -1,10 +1,12 @@
 ﻿using System;
-using System.Threading.Tasks;
+using System.Configuration;
+using System.IO;
 using CommonProject.Repositories;
 using CommonProject.Repositories.Interfaces;
 using GismeteoGrabber.Scheduler;
 using GismeteoGrabber.Utilities;
 using GismeteoGrabber.Utilities.Interfaces;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -16,7 +18,7 @@ namespace GismeteoGrabber
         {
             using IHost host = CreateHostBuilder(args).Build();
             host.RunAsync();
-
+           
             using (var scope = host.Services.CreateScope())
             {
                 var serviceProvider = scope.ServiceProvider;
@@ -31,16 +33,30 @@ namespace GismeteoGrabber
             }
             Console.ReadKey();
         }
-            
+
 
         static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureServices((_, services) =>
-                    services.AddSingleton<IRequestHandler, HtmlWebRequestHandler>()
-                    .AddSingleton<IWeatherRepository>(new WeatherRepository("server=localhost;port=3306;user=root;password=1234;database=weatherDb;"))
+                .ConfigureServices((_, services) => ConfigurateServices(services));
+
+        static void ConfigurateServices(IServiceCollection services)
+        {
+            var configuration = GetConfigurationRoot();
+            services.AddSingleton(GetConfigurationRoot())
+                    .AddSingleton<IRequestHandler, HtmlWebRequestHandler>()
+                    .AddSingleton<IWeatherRepository>(new WeatherRepository(configuration.GetConnectionString("MySqlConnection")))
                     .AddSingleton<IParser, GismeteoParser>()
                     .AddTransient<JobFactory>()
-                    .AddScoped<ParserJob>()
-                );
-        }    
+                    .AddScoped<ParserJob>();
+        }
+
+
+        static IConfigurationRoot GetConfigurationRoot()
+        {
+            return new ConfigurationBuilder()
+               .SetBasePath(Directory.GetParent(AppContext.BaseDirectory).FullName)
+               .AddJsonFile("appsettings.json", false)
+               .Build();
+        }
+    }    
 }

@@ -19,7 +19,7 @@ namespace GismeteoGrabber.Scheduler
                 .WithIdentity("MailingTrigger", "default")
                 .StartNow()
                 .WithSimpleSchedule(x => x
-                .WithIntervalInMinutes(3)
+                .WithIntervalInHours(24)
                 .RepeatForever())
                 .Build();
 

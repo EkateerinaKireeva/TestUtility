@@ -28,7 +28,7 @@ namespace MainApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IWeatherRepository>(new WeatherRepository("server=localhost;port=3306;user=root;password=1234;database=weatherDb;"));
+            services.AddSingleton<IWeatherRepository>(new WeatherRepository(Configuration.GetConnectionString("MySqlConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
